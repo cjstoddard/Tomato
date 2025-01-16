@@ -13,8 +13,6 @@ source venv/bin/activate
 
 pip install --upgrade luma.oled
 
-pip install --upgrade rpi.gpio
-
 Testing the oled
 
 git clone https://github.com/rm-hull/luma.examples.git
