@@ -1,6 +1,10 @@
 # Tomato
 Building a Radical Edward Computer
 
+Start here for hooking up your OLED SSD 1306.
+
+https://robu.in/raspberry-pi-zero-2w-how-to-enable-i2c/
+
 sudo apt install -y python3-dev python3-smbus i2c-tools python3-pil python3-setuptools python3-venv libjpeg-dev zlib1g-dev python3-av libfreetype6-dev liblcms2-dev libopenjp2-7 git
 
 git clone https://github.com/cjstoddard/Tomato.git
