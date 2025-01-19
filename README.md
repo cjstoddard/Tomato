@@ -6,9 +6,13 @@ Here is a useless little program that displayes the face of Tomato, Radical Edwa
 I got the Avatar Custom Faces for Tomato from [CyberSpaceManMike](https://cyberspacemanmike.com/product/radical-edwards-avatar-custom-faces-for-the-custom-faces-mod-and-radical-edward-pwnagotchi-cyberdeck/), the bundle is a free download. These images were designed for use with a Pwnagothi, but works well for this project. It was [his blog](https://cyberspacemanmike.com/2024/01/18/radical-edwards-pwnagotchi-cyberdeck/) post that inspired me to do this, so creative credit must be given to CyberSapceManMike.
 
 
-Start here for hooking up your OLED SSD 1306.
+If you have never used an SSD 1306 with a Raspberry Pi, here is a good guide for setting one up.
 
 https://robu.in/raspberry-pi-zero-2w-how-to-enable-i2c/
+
+I used the same wiring used in this guide, so you should not need to make any changes if you followed it. Additionally, I have LED attached attached to GPIO pin 21 with a 100 ohm resistor and ground. If you have never made an LED blink on a Rasperry PI, take a look at this [tutorial](https://raspberrypihq.com/making-a-led-blink-using-the-raspberry-pi-and-python/). Just keep in mind, tomato.py as is, uses GPIO pin 21 and if you followed that tutorial, you will have to change either the wiring of the pi to match the progrom or change the program to match the wiring.
+
+Once you have the SSD 1306 and the LED are configured, you can download and run this project.
 
 > sudo apt install -y python3-dev python3-smbus i2c-tools python3-pil python3-setuptools python3-venv libjpeg-dev zlib1g-dev python3-av libfreetype6-dev liblcms2-dev libopenjp2-7 git
 
