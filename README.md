@@ -18,7 +18,7 @@ python3 -m venv venv
 
 source venv/bin/activate
 
-pip install --upgrade luma.oled
+pip install --upgrade luma.oled psutil
 
 python3 tomato.py
 
