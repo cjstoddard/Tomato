@@ -10,7 +10,7 @@ If you have never used an SSD 1306 with a Raspberry Pi, here is a good guide for
 
 https://robu.in/raspberry-pi-zero-2w-how-to-enable-i2c/
 
-I used the same wiring used in this guide, so you should not need to make any changes if you followed it. Additionally, I have LED attached attached to GPIO pin 21 with a 100 ohm resistor and ground. If you have never made an LED blink on a Rasperry PI, take a look at this [tutorial](https://raspberrypihq.com/making-a-led-blink-using-the-raspberry-pi-and-python/). Just keep in mind, tomato.py as is, uses GPIO pin 21 and if you followed that tutorial, you will have to change either the wiring of the pi to match the progrom or change the program to match the wiring.
+I used the same wiring used in this guide, so you should not need to make any changes if you followed it. Additionally, I have an LED attached attached to GPIO pin 21 with a 100 ohm resistor and ground. If you have never made an LED blink on a Rasperry PI, take a look at this [tutorial](https://raspberrypihq.com/making-a-led-blink-using-the-raspberry-pi-and-python/). Just keep in mind, tomato.py as is, uses GPIO pin 21 and if you followed that tutorial, you will have to change either the wiring of the pi to match the program or change the program to match the wiring.
 
 Once you have the SSD 1306 and the LED are configured, you can download and run this project.
 
@@ -28,29 +28,38 @@ Once you have the SSD 1306 and the LED are configured, you can download and run 
 
 > python3 tomato.py
 
-There are two easy changes to the code you can make is first the thresholds for the three things the program monitors. These numbers reflect my own comfort levels. Look for these lines in the code and change them to suit your needs.
+There are two easy changes to the code you can make, first is the thresholds for the three things the program monitors. These numbers reflect my own comfort levels. Look for these lines in the code and change them to suit your needs.
 
 > TEMP_THRESHOLD = 60.0  # Celsius
+>
 > LOAD_THRESHOLD = 75.0  # Percentage
+>
 > MEMORY_LOW = 25.0  # Below 25%: Low memory
+>
 > MEMORY_HIGH = 75.0  # Above 75%: High memory
 
 Second, I have the program set to run each check 30 seconds apart in a loop. If you want to shorten this timing, look for these lines towards the bottom of the program under the  "def main():" function and change the time.sleep(30) to what you want it to be.
 
 > display_cpu_temperature()
+>
 > time.sleep(30)  # Check every 30 seconds
 >
 > display_cpu_load()
+>
 > time.sleep(30)  # Check every 30 seconds
 >
 > display_free_memory()
+>
 > time.sleep(30)  # Check every 30 seconds
 
 Once you are done testing Tomato and making sure it works, edit the tomato.sh file and change the path of this program for your environment. Then to run this program at startup, do the following;
 
 > sudo cp tomato.sh /usr/local/bin/
+>
 > sudo chown root:root /usr/local/bin/tomato.sh
+>
 > sudo chmod +x /usr/local/bin/tomato.sh
+>
 > sudo crontab -e
 
 and add this line to the file;
