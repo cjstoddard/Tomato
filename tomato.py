@@ -1,13 +1,13 @@
 import logging
+import RPi.GPIO as GPIO
+import time
+import os
+import psutil
+import math
 from luma.core.interface.serial import i2c
 from luma.core.render import canvas
 from luma.oled.device import ssd1306
 from PIL import Image, ImageFont
-import RPi.GPIO as GPIO
-import time
-import os
-import psutil  # For system monitoring
-import math  # For rounding down
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
