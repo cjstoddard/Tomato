@@ -5,6 +5,12 @@ Here little program that displayes the face of Tomato, Radical Edwards computer 
 
 I got the Avatar Custom Faces for Tomato from [CyberSpaceManMike](https://cyberspacemanmike.com/product/radical-edwards-avatar-custom-faces-for-the-custom-faces-mod-and-radical-edward-pwnagotchi-cyberdeck/), the bundle is a free download. These images were designed for use with a Pwnagothi, but works well for this project. It was [his blog](https://cyberspacemanmike.com/2024/01/18/radical-edwards-pwnagotchi-cyberdeck/) post that inspired me to do this, so creative credit and a thank you must be given to CyberSpaceManMike.
 
+
+![alt text](https://raw.githubusercontent.com/cjstoddard/Tomato/refs/heads/main/Tomato.jpg)
+
+I have an RTC hooked up to my Pi 2 Zero, it is not neccessary for this project.
+
+
 If you have never used an SSD 1306 with a Raspberry Pi, here is a good guide for setting one up.
 
 https://robu.in/raspberry-pi-zero-2w-how-to-enable-i2c/
@@ -84,5 +90,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-![alt text](https://raw.githubusercontent.com/cjstoddard/Tomato/refs/heads/main/Tomato.jpg)
