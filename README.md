@@ -66,7 +66,7 @@ and add this line to the file;
 
 > @reboot /usr/local/bin/tomato.sh >&1
 
-Save and exit the file and you should be good.
+Save and exit the file and reboot the system, you should be good.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
