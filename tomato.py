@@ -71,8 +71,8 @@ def display_image_with_text(image_name, text, duration=2):
 def startup_animation():
     logging.info("Running startup animation.")
     display_image_with_text("AWAKE.png", "Boot", duration=2)
-    display_image_with_text("LOOK_L.png", "Boot", duration=1)
-    display_image_with_text("LOOK_R.png", "Boot", duration=1)
+    display_image_with_text("LOOK_L_HAPPY.png", "Boot", duration=1)
+    display_image_with_text("LOOK_R_HAPPY.png", "Boot", duration=1)
     logging.info("Startup animation complete.")
 
 # Function to check and display CPU temperature
@@ -152,8 +152,8 @@ def display_free_memory():
 # Function for the "Looking around" animation
 def looking_around():
     logging.info("Looking around...")
-    display_image_with_text("LOOK_L_HAPPY.png", "Looking", duration=2)
-    display_image_with_text("LOOK_R_HAPPY.png", "Looking", duration=2)
+    display_image_with_text("LOOK_L.png", "Looking", duration=2)
+    display_image_with_text("LOOK_R.png", "Looking", duration=2)
 
 # Main function
 def main():
