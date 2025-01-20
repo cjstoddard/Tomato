@@ -1,10 +1,9 @@
 # Tomato
 Building a Radical Edward Computer
 
-Here is a useless little program that displayes the face of Tomato, Radical Edwards computer from the Cowboy Bebop series, on an SSD 1306 OLED, The program checks CPU Temperature, CPU Load and Free Memory and displays different faces depending on what it finds. I developed this on a Rasperry Pi 2 W Zero, but should work on any Rasperry Pi. This program does not serve much of a purpose beyond giving your Rasperry a Pi a bit of personality. If I get bored at some point, I may do a version for the Waveshare 2.13 e-ink hat.
+Here little program that displayes the face of Tomato, Radical Edwards computer from the Cowboy Bebop series, on an SSD 1306 OLED, The program checks CPU Temperature, CPU Load and Free Memory. The program is a system monitor that displays different faces depending on what it finds. I developed this on a Rasperry Pi 2 W Zero, but should work on any Rasperry Pi. This program is not a serious system monitor and  its main purpose is to give your Rasperry a Pi a bit of personality.
 
 I got the Avatar Custom Faces for Tomato from [CyberSpaceManMike](https://cyberspacemanmike.com/product/radical-edwards-avatar-custom-faces-for-the-custom-faces-mod-and-radical-edward-pwnagotchi-cyberdeck/), the bundle is a free download. These images were designed for use with a Pwnagothi, but works well for this project. It was [his blog](https://cyberspacemanmike.com/2024/01/18/radical-edwards-pwnagotchi-cyberdeck/) post that inspired me to do this, so creative credit must be given to CyberSpaceManMike.
-
 
 If you have never used an SSD 1306 with a Raspberry Pi, here is a good guide for setting one up.
 
@@ -67,6 +66,16 @@ and add this line to the file;
 > @reboot /usr/local/bin/tomato.sh >&1
 
 Save and exit the file and reboot the system, you should be good.
+
+Ideas for the future:
+
+It might be interesting to add some randomness to the program by adding a function that every so often displays a random face.
+
+Setup a mood system based on the state of CPU Temp, CPU Load and Free Memory. Prehaps 1 (sad) - 10 (happy), and each time it checks CPU Temp, CPU Load and Free Memory, it adds a +1, 0 or -1 for each one to the mood rating, so the programs mood would change gradually over time depending on what was happening with the system.
+
+Have the program search the running processes looking for common programs and display a specific face when it finds one of those programs running.
+
+Add a list of comments to be displayed with the faces. Maybe have different word lists for different personality types.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
