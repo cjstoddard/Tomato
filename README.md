@@ -73,13 +73,13 @@ and add this line to the file;
 
 Save and exit the file and reboot the system, you should be good.
 
-Ideas for the future:
+Possible modifications:
 
 It might be interesting to add some randomness to the program by adding a function that every so often displays a random face.
 
-Setup a mood system based on the state of CPU Temp, CPU Load and Free Memory. Prehaps 1 (sad) - 10 (happy), and each time it checks CPU Temp, CPU Load and Free Memory, it adds a +1, 0 or -1 for each one to the mood rating, so the programs mood would change gradually over time depending on what was happening with the system.
+Setup a mood system based on the state of CPU Temp, CPU Load and Free Memory. Prehaps 1 (sad) - 10 (happy), and each time it checks CPU Temp, CPU Load and Free Memory, it adds a +1, 0 or -1 for each one to the mood rating, so the programs mood would changes gradually over time depending on what was happening with the system.
 
-Have the program search the running processes looking for common programs and display a specific face when it finds one of those programs running.
+Have the program search the running processes looking for common programs and display a specific face when it finds one of those programs running. Alternately, if this is being used with another project, Tomato could search the running programs for a specific program and alert you if that program stops running.
 
 Add a list of comments to be displayed with the faces. Maybe have different word lists for different personality types.
 
