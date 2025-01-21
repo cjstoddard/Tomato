@@ -9,6 +9,8 @@ This version of Tomato displays the face in a standard 128x64 graphical window. 
 
 > cd Tomato/Alt-Tomato
 
+> ln -s ../pics pics
+
 > python3 -m venv venv
 
 > source venv/bin/activate
