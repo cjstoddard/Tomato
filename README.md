@@ -1,7 +1,7 @@
 # Tomato
 Building a Radical Edward Computer
 
-Here little program that displayes the face of Tomato, Radical Edwards computer from the Cowboy Bebop series, on an SSD 1306 OLED, The program checks CPU Temperature, CPU Load and Free Memory. The program is a system monitor that displays different faces depending on what it finds. I developed this on a Rasperry Pi 2 W Zero, but should work on any Rasperry Pi. This program is not a serious system monitor and  its main purpose is to give your Rasperry a Pi a bit of personality.
+Here little program that displayes the face of Tomato, Radical Edwards computer from the Cowboy Bebop series, on an SSD 1306 OLED, The program checks CPU Temperature, CPU Load and Free Memory. The program is a system monitor that displays different faces depending on what it finds. I developed this on a Rasperry Pi 2 W Zero, but should work on any Rasperry Pi. This program is not a serious system monitor and  its main purpose is to give your Rasperry a Pi a bit of personality. In the Alt Tomato folder is a version that does not use an OLED and displays the face on the computer screen.
 
 I got the Avatar Custom Faces for Tomato from [CyberSpaceManMike](https://cyberspacemanmike.com/product/radical-edwards-avatar-custom-faces-for-the-custom-faces-mod-and-radical-edward-pwnagotchi-cyberdeck/), the bundle is a free download. These images were designed for use with a Pwnagothi, but works well for this project. It was [his blog](https://cyberspacemanmike.com/2024/01/18/radical-edwards-pwnagotchi-cyberdeck/) post that inspired me to do this, so creative credit and a thank you must be given to CyberSpaceManMike.
 
