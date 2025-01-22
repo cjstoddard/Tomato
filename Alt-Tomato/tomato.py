@@ -23,6 +23,8 @@ MEMORY_HIGH = 75.0  # Above 75%: High memory
 # Colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+YELLOW = (255, 255, 0)
 
 # Initialize Pygame
 pygame.init()
@@ -31,7 +33,7 @@ pygame.display.set_caption("System Monitor")
 font_small = pygame.font.SysFont("monospace", 8)
 font_large = pygame.font.SysFont("monospace", 14)
 
-def draw_text(text, x, y, font, color=WHITE):
+def draw_text(text, x, y, font, color=RED):
     """Utility function to draw text on the screen."""
     text_surface = font.render(text, True, color)
     screen.blit(text_surface, (x, y))
@@ -45,11 +47,11 @@ def display_image(image_name, text):
         image = pygame.transform.scale(image, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
         # Display the image with a yellow background
-        screen.fill((255, 255, 0))  # Set the background color to yellow (RGB)
+        screen.fill(YELLOW)  # Set the background color to yellow (RGB)
         screen.blit(image, (0, 0))  # Draw the image on the screen
         
         # Draw the text at the lower right side of the screen with red color
-        text_surface = font_large.render(text, True, (255, 0, 0))  # Red color (RGB) with larger font
+        text_surface = font_large.render(text, True, RED)  # Red color (RGB) with larger font
         text_width, text_height = text_surface.get_size()
         text_x = SCREEN_WIDTH - text_width - 5  # 5px margin from the right
         text_y = SCREEN_HEIGHT - text_height - 5  # 5px margin from the bottom
@@ -163,4 +165,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
