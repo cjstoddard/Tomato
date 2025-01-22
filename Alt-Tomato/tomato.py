@@ -119,9 +119,9 @@ def display_free_memory():
 
         # Display image and memory percentage
         if free_memory_percentage < MEMORY_LOW:
-            display_image("HAPPY.png", f"Mem: {free_memory_percentage:.1f}%")
-        elif MEMORY_LOW <= free_memory_percentage <= MEMORY_HIGH:
             display_image("LONELY.png", f"Mem: {free_memory_percentage:.1f}%")
+        elif MEMORY_LOW <= free_memory_percentage <= MEMORY_HIGH:
+            display_image("HAPPY.png", f"Mem: {free_memory_percentage:.1f}%")
         else:
             display_image("EXCITED.png", f"Mem: {free_memory_percentage:.1f}%")
 
