@@ -140,11 +140,11 @@ def display_free_memory():
 
         # Display image and memory percentage
         if free_memory_percentage < MEMORY_LOW:
-            display_image_with_text("EXCITED.png", f"Mem: {free_memory_percentage:.1f}%", duration=2)
+            display_image_with_text("LONELY.png", f"Mem: {free_memory_percentage:.1f}%", duration=2)
         elif MEMORY_LOW <= free_memory_percentage <= MEMORY_HIGH:
             display_image_with_text("HAPPY.png", f"Mem: {free_memory_percentage:.1f}%", duration=2)
         else:
-            display_image_with_text("LONELY.png", f"Mem: {free_memory_percentage:.1f}%", duration=2)
+            display_image_with_text("EXCITED.png", f"Mem: {free_memory_percentage:.1f}%", duration=2)
 
     except Exception as e:
         logging.error(f"Error checking free memory: {e}")
