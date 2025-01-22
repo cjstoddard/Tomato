@@ -22,9 +22,14 @@ MEMORY_HIGH = 75.0  # Above 75%: High memory
 
 # Colors
 BLACK = (0, 0, 0)
-WHITE = (255, 255, 255)
 RED = (255, 0, 0)
+ORANGE = (255, 100, 35)
 YELLOW = (255, 255, 0)
+GREEN = (50, 220, 0)
+BLUE  = (20, 50, 200)
+INDIGO = (35, 0, 100)
+VIOLET = (50, 0, 70)
+WHITE = (255, 255, 255)
 
 # Initialize Pygame
 pygame.init()
