@@ -21,6 +21,7 @@ MEMORY_LOW = 25.0  # Below 25%: Low memory
 MEMORY_HIGH = 75.0  # Above 75%: High memory
 
 # Colors
+# I listed all the basic colors here for ease of customization.
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 ORANGE = (255, 100, 35)
