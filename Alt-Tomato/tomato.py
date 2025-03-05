@@ -35,7 +35,7 @@ WHITE = (255, 255, 255)
 # Initialize Pygame
 pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("System Monitor")
+pygame.display.set_caption("Tomato")
 font_small = pygame.font.SysFont("monospace", 8)
 font_large = pygame.font.SysFont("monospace", 14)
 
